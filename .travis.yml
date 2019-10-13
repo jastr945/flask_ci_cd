@@ -7,3 +7,7 @@ install:
   - pipenv install
 script:
   - pytest
+env:
+  - CODECOV_TOKEN="d6dbc1e3-555b-41f6-a875-de5111f69149"
+after_success:
+  - codecov
